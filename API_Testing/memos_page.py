@@ -38,7 +38,3 @@ class MemosPage:
 
     def memo_exists(self, memo_content: str) -> bool:
         return self.get_memo_card(memo_content).count() > 0
-
-
-#测试是否合并分支git branchgit log --oneline 1016
-print("test branch change")
