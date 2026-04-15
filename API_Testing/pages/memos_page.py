@@ -51,13 +51,16 @@ class MemosPage:
         #定位表情按钮
         self.smile_button=page.locator(".lucide.lucide-smile-plus").first
         #点赞按钮
-        self.delete_button=page.get_by_role("button", name="👍", exact=True)
+        self.delete_button=page.get_by_role("dialog", name="👍", exact=True)
+        #定位删除弹窗
+        self.delete_dialog=page.get_by_role("dialog", name="Are you sure you want to")
         #定位删除按钮
         self.delete_option=self.page.get_by_role("menuitem", name="删除").click()
         
 
     def open(self) -> None:
         """
+    
         打开备忘录页面
         
         该方法访问备忘录页面的 URL
