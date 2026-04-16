@@ -1,5 +1,5 @@
 from playwright.sync_api import Page
-from API_Testing.pages.signup_page import SignupPage
+from ..pages.signup_page import SignupPage
 import time
 
 
