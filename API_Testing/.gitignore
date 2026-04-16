@@ -1,0 +1,17 @@
+# Created by pytest automatically.
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Playwright
+# =====================
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# =====================
+# VSCode
+# =====================
+.vscode/
